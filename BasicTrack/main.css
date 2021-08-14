@@ -22,15 +22,55 @@ body{
     
 }
 
+
 .plan{
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
+    padding: 26px;
     display: inline-block;
     margin: 8px;
     width: 30%;
     vertical-align: middle;
    
+}
+
+.plan > *{
+    margin: 0 0 20px 0;
+}
+
+
+.plan--highlighted{
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.plan__annotation{
+    background:white;
+    color: #19b84c;
+    padding:8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+.plan__features{
+    list-style: none;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.plan__features li{
+    margin:8px;
+}
+
+
+.plan__title{
+
+}
+
+.plan__price{
+    
 }
 
 .section-title {
