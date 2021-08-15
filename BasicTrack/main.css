@@ -1,11 +1,13 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
 }
 
 
-body{
-    font-family:  'Courier New', Courier, monospace;
+body {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
 }
 
@@ -16,14 +18,14 @@ body{
     padding: 10px;
     background: url("freedom.jpg");
     margin: 0 0 10px 0;
-    
-    
 
-    
+
+
+
 }
 
 
-.plan{
+.plan {
     background: #d5ffdc;
     text-align: center;
     padding: 26px;
@@ -31,46 +33,73 @@ body{
     margin: 8px;
     width: 30%;
     vertical-align: middle;
-   
+
 }
 
-.plan > *{
+.plan>* {
     margin: 0 0 20px 0;
 }
 
 
-.plan--highlighted{
+.plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.plan__annotation{
-    background:white;
+.plan__annotation {
+    background: white;
     color: #19b84c;
-    padding:8px;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
 }
 
-.plan__features{
+.plan__features {
     list-style: none;
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.plan__features li{
-    margin:8px;
+.plan__features li {
+    margin: 8px;
 }
 
 
-.plan__title{
+.plan__title {
+    color: #0e4f1F;
+}
+
+.plan__price {
+    color: #858585;
 
 }
 
-.plan__price{
-    
+.button {
+    background-color: #0e4f1F;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1.5px solid #0e4f1F;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #0e4f1F;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+.plan--highlighted .plan__price {
+    color: #0e4f1F;
 }
 
 .section-title {
@@ -83,74 +112,135 @@ body{
     font-family: 'Anton', sans-serif;
 }
 
-.main-header{
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+
+    display: inline-block;
+    width: 30%;
+
+
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    height: 128px;
+    margin: 10px auto;
+
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+
+.main-header {
     width: 100%;
-    background:#2ddf5c;
+    background: #2ddf5c;
     padding: 8px 16px;
 }
 
-.main-header__brand{
+.main-header__brand {
     text-decoration: none;
-    color:#0e4f1F;
+    color: #0e4f1F;
     font-weight: bold;
-    font-size:22px;
+    font-size: 22px;
 }
 
-.main-header>div{
+.main-header>div {
     display: inline-block;
     vertical-align: middle;
 }
-.main-nav{
+
+
+
+.main-nav {
     display: inline-block;
     width: calc(100% - 80px);
     text-align: right;
     vertical-align: middle;
 }
-.main-nav__item{
+
+.main-nav__item {
     margin: 0;
     padding: 0;
     list-style: none;
 
 }
-.main-nav__item{
+
+.main-nav__item {
     display: inline-block;
     margin: 0 16px;
-    
+
 }
 
-.main-nav__item a{
-    color:#0e4f1F;
+.main-nav__item a {
+    color: #0e4f1F;
     text-decoration: none;
-    padding:3px 0;
+    padding: 3px 0;
 
 
 }
-.main-nav__item ::after{
+
+.main-nav__item ::after {
     content: "";
-    color:red;
+    color: red;
 }
 
 
 .main-nav__item a:hover,
-.main-nav__item a:active{
-    color:white;
-    font-weight:bold;
+.main-nav__item a:active {
+    color: white;
+    font-weight: bold;
     border-bottom: 1px solid;
 }
 
 
-.main-nav__item--cta a{
-    color:white;
+.main-nav__item--cta a {
+    color: white;
     background: #ff1b68;
-    padding:8px 16px;
+    padding: 8px 16px;
     border-radius: 8px;
 }
 
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active{
+.main-nav__item--cta a:active {
     border: none;
     color: #ff1b68;
     background: white;
-    
+
+}
+
+
+.main-footer{
+    background:black;
+    padding:32px;
+    margin-top: 48px;
+
 }
