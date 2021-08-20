@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.button {
+    background-color: #0e4f1F;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1.5px solid #0e4f1F;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #0e4f1F;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+
+.main-header__brand {
+    text-decoration: none;
+    color: #0e4f1F;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 80px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+
+}
+
+.main-nav__item a {
+    color: #0e4f1F;
+    text-decoration: none;
+    padding: 3px 0;
+
+
+}
+
+.main-nav__item ::after {
+    content: "";
+    color: red;
+}
+
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    border: none;
+    color: #ff1b68;
+    background: white;
+
+}
+
+
+.main-footer{
+    background:black;
+    padding:32px;
+    margin-top: 48px;
+
+}
+
+.main-footer__links{
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.main-footer__link{
+    display: inline-block;
+    margin:0 16px;
+}
+
+.main-footer__link a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.main-footer__link a:hover,
+.main-footer__link a:active{
+    color: #ccc;
+}
