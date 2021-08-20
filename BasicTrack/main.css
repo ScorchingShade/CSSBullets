@@ -85,6 +85,14 @@
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
+    margin-top: 42px;
+    position: relative;
+}
+
+.slogan{
+    position:absolute;
+    top:82%;
+    left:3%;
 }
 
 
