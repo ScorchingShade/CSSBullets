@@ -48,6 +48,14 @@ body {
     color: #0e4f1F;
     font-weight: bold;
     font-size: 22px;
+    height:32px;
+    display: inline-block;
+
+}
+
+.main-header__brand img{
+    
+    height:100%;
 }
 
 .main-header>div {
@@ -55,7 +63,13 @@ body {
     vertical-align: middle;
 }
 
-
+.backdrop{
+    position:relative;
+    z-index: 1000;
+    height:100%;
+    width: 100%;
+    background:rgba(0,0,0,0.5);
+}
 
 .main-nav {
     display: inline-block;

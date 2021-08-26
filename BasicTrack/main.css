@@ -5,12 +5,15 @@
     width: 100%;
     height: 528px;
     padding: 20px;
-    background-image: url("freedom.jpg");
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 40% bottom 80%/cover no-repeat border-box; 
+    
+    /**  all the below properties can be applied as shorthand like above*/
+    /* background-size: cover;
     background-position: left 40% bottom 80%;
     background-repeat: no-repeat;
-    background-clip: border-box;
     background-origin: border-box;
+    background-clip: border-box; */
+
 
 
     margin: 0 0 10px 0;
@@ -137,6 +140,7 @@
     border-radius: 50%;
     height: 128px;
     margin: 10px auto;
+    padding:21px;
 
 }
 
