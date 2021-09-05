@@ -1,12 +1,10 @@
-
-
 #product-overview {
     background: #ff1b68;
     width: 100vw;
     height: 48vh;
-     padding: 2.6rem;  
-    background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") center/cover no-repeat border-box; 
-    
+    padding: 2.6rem;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") center/cover no-repeat border-box;
+
     /**  all the below properties can be applied as shorthand like above*/
     /* background-size: cover;
     background-position: left 40% bottom 80%;
@@ -16,8 +14,8 @@
 
 
 
-   margin-top:2.75rem;
-   position: relative;
+    margin-top: 2.75rem;
+    position: relative;
 
 
 
@@ -37,7 +35,7 @@
     display: block;
     margin: 8px 0;
     width: 100%;
-   
+
 
 }
 
@@ -72,6 +70,30 @@
 }
 
 
+@media (min-width: 40rem) {
+    .plan {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 15rem;
+        max-width: 25rem;
+    }
+
+    .plan-list {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+    .plan--highlighted {
+
+         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); 
+    }
+
+}
+
 .plan__title {
     color: #0e4f1F;
 }
@@ -101,10 +123,10 @@
     font-size: 1.6rem;
 }
 
-.slogan{
-    position:absolute;
-    top:82%;
-    left:3%;
+.slogan {
+    position: absolute;
+    top: 82%;
+    left: 3%;
 }
 
 
@@ -129,8 +151,7 @@
 
 .key-feature {
 
-    display: inline-block;
-    width: 30%;
+    vertical-align: top;
 
 
 }
@@ -142,7 +163,7 @@
     border-radius: 50%;
     height: 128px;
     margin: 10px auto;
-    padding:21px;
+    padding: 21px;
 
 }
 
@@ -152,6 +173,18 @@
     color: white;
     font-size: 20px;
     vertical-align: top;
+}
+
+@media(min-width:40rem){
+    .key-feature {
+
+        width:30%;
+        display:inline-block;
+        vertical-align: top;
+        max-width:25rem;
+    
+    
+    }
 }
 
 .modal {
@@ -165,18 +198,18 @@
     padding: 1rem;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal__title {
+}
+
+.modal__title {
     text-align: center;
     margin: 0 0 1rem 0;
-  }
-  
-  .modal__actions {
+}
+
+.modal__actions {
     text-align: center;
-  }
-  
-  .modal__action {
+}
+
+.modal__action {
     border: 1px solid #0e4f1f;
     background: #0e4f1f;
     text-decoration: none;
@@ -184,32 +217,32 @@
     font: inherit;
     padding: 0.5rem 1rem;
     cursor: pointer;
-  }
-  
-  .modal__action:hover,
-  .modal__action:active {
+}
+
+.modal__action:hover,
+.modal__action:active {
     background: #2ddf5c;
     border-color: #2ddf5c;
-  }
-  
-  .modal__action--negative {
+}
+
+.modal__action--negative {
     background: red;
     border-color: red;
-  }
-  
-  .modal__action--negative:hover,
-  .modal__action--negative:active {
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
-  }
+}
 
-  @media(min-width:40rem) {
-      #product-overview h1{
-          font-size: 3rem;
-      }
+@media(min-width:40rem) {
+    #product-overview h1 {
+        font-size: 2.0rem;
+    }
 
-      #product-overview{
-          height:55vh;
-          background-position:left 50% bottom 83% ;
-      }
-  }
+    #product-overview {
+        height: 55vh;
+        background-position: left 50% bottom 83%;
+    }
+}

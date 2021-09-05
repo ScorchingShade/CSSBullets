@@ -47,8 +47,8 @@ body {
     text-decoration: none;
     color: #0e4f1F;
     font-weight: bold;
-    font-size: 1.5rem;
-    height:1.5rem;
+    
+    height:2.5rem;
     display: inline-block;
 
 }
@@ -155,8 +155,8 @@ body {
 }
 
 .main-footer__link{
-    display: inline-block;
-    margin:0 1rem;
+    display: block;
+    margin:1rem 0rem;
 }
 
 .main-footer__link a{
@@ -170,6 +170,13 @@ body {
     color: #ccc;
 }
 
+
+@media(min-width:40rem){
+    .main-footer__link{
+        display: inline-block;
+     margin:0 1rem;
+    }
+}
 
 .mobile-nav {
     display: none;
@@ -202,6 +209,7 @@ body {
 
 
   .toggle-button {
+      
     width: 3rem;
     background: transparent;
     border: none;
@@ -221,6 +229,12 @@ body {
     background: black;
     display: block;
     margin: 0.6rem 0;
+  }
+
+  @media(min-width:40rem) {
+    .toggle-button{
+        display: none;
+    }
   }
   
 
