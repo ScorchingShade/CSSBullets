@@ -47,7 +47,7 @@ body {
     text-decoration: none;
     color: #0e4f1F;
     font-weight: bold;
-    
+    vertical-align: middle;
     height:2.5rem;
     display: inline-block;
 
@@ -77,10 +77,8 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    width: calc(100% - 122px);
-    text-align: right;
-    vertical-align: middle;
+    display: none;
+  
 }
 
 .main-nav__item {
@@ -175,6 +173,13 @@ body {
     .main-footer__link{
         display: inline-block;
      margin:0 1rem;
+    }
+
+    .main-nav{
+        display: inline-block;
+        width: calc(100% - 122px);
+        text-align: right;
+        vertical-align: middle;
     }
 }
 
