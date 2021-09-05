@@ -5,7 +5,7 @@
     width: 100vw;
     height: 48vh;
      padding: 2.6rem;  
-    background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 40% bottom 80%/cover no-repeat border-box; 
+    background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") center/cover no-repeat border-box; 
     
     /**  all the below properties can be applied as shorthand like above*/
     /* background-size: cover;
@@ -24,20 +24,20 @@
 
 }
 
-.plan-list {
-    width: 80%;
+/* .plan-list {
+    width: 100%;
     margin:auto;
     text-align:center;
-}
+} */
 
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 26px;
-    display: inline-block;
-    margin: 8px;
-    width: 30%;
-    vertical-align: middle;
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+   
 
 }
 
@@ -49,7 +49,7 @@
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
@@ -98,6 +98,7 @@
     font-family: 'Anton', sans-serif;
     margin-top: 42px;
     position: relative;
+    font-size: 1.6rem;
 }
 
 .slogan{
@@ -200,4 +201,15 @@
   .modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
+  }
+
+  @media(min-width:40rem) {
+      #product-overview h1{
+          font-size: 3rem;
+      }
+
+      #product-overview{
+          height:55vh;
+          background-position:left 50% bottom 83% ;
+      }
   }
