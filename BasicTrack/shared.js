@@ -11,6 +11,9 @@ var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
 
+var navCta=document.querySelector('.main-nav__item--cta');
+
+
 
 const closeModal = ()=>{
 
@@ -19,9 +22,11 @@ const closeModal = ()=>{
 
     if(modal){
         modal.classList.remove('open');
+       
     }
-    
-    background.classList.remove('open');
+    backdrop.classList.remove('open');
+    backdrop.style.display='none';
+ 
 }
 
 
@@ -29,13 +34,23 @@ if(modal_button_no){
     modal_button_no.addEventListener('click', closeModal);
 }
 
+
+// navCta.addEventListener('click',()=>{
+//     modal.classList.add('open');
+//     backdrop.classList.add('open');
+// })
+
+
 selectPlanButton.forEach(i=>{
     i.addEventListener('click',()=>{
         // modal.style.display='block';
         // this.closeModal();
 
         // modal.className='open'; This will actually overwrite a complete class listing
+        
         modal.classList.add('open');
+        backdrop.classList.add('open');
+       // closeModal();
 
 
 
