@@ -109,9 +109,11 @@
 
 @media(min-width: 40rem){
     main{
-        margin: 3rem auto;
-        max-width:1500px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
 }
 
 
@@ -127,6 +129,6 @@
 
     #free:hover,
     #free:active{
-        border-right-color:#ff5454 ;
+        border-left-color:#ff5454 ;
     }
 }

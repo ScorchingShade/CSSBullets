@@ -8,9 +8,10 @@
     margin: auto;
   } */
   
-  .testimonial:first-of-type {
-    margin-top: 6rem;
-  }
+main{
+  padding-top:1.2rem;
+}
+
 
   .testimonial__image-container{
     width: 100%;
