@@ -70,6 +70,10 @@
     font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
+    font-weight: 100;
+    font-family: "Roboto", "Helvetica Neue";
+    font-style: italic;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.7);
 }
 
 .clearfix {
