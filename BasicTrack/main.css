@@ -31,9 +31,12 @@
     background: #d5ffdc;
     text-align: center;
     padding: 26px;
-    display: block;
     margin: 8px 0;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:28rem;
 
 
 }
@@ -46,6 +49,8 @@
 .plan--highlighted {
     background: #19b84c;
     color: white;
+    height:30rem;
+    z-index: 50;
     /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
@@ -71,9 +76,8 @@
 
 @media (min-width: 40rem)  {
     .plan {
-        display: inline-block;
+        
         width: 30%;
-        vertical-align: middle;
         min-width: 15rem;
         max-width: 25rem;
     }
@@ -81,7 +85,9 @@
     .plan-list {
         width: 100%;
         margin: auto;
-        text-align: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -178,11 +184,15 @@
     .key-feature {
 
         width:30%;
-        display:inline-block;
-        vertical-align: top;
         max-width:25rem;
     
     
+    }
+
+    .key-feature__list{
+        display:flex;
+        justify-content:center;
+
     }
 }
 
