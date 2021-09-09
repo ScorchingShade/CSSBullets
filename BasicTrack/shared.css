@@ -3,12 +3,24 @@
 *::before {
     box-sizing: border-box;
     margin: 0;
+    
 }
 
+html{
+    height: 100%;
+}
 
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    display: grid;
+
+    grid-template-rows:  3.5rem auto auto;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    height:100%;
+    
 }
 
 .button {
@@ -41,8 +53,10 @@ body {
 }
 
 main{
-    min-height: calc(100vh - 3.5rem - 8rem);
-    margin-top:3.5rem;
+    
+    
+    grid-area:main;
+    
 }
 
 
@@ -57,6 +71,7 @@ main{
     display:flex;
     align-items: center;
     justify-content: space-between;
+    grid-area: header;
 }
 
 .main-header__brand {
@@ -155,6 +170,8 @@ main{
     background:black;
     padding:2rem;
     margin-top: 3rem;
+    grid-area:footer;
+    
 
 }
 
