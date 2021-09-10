@@ -299,3 +299,17 @@ main{
       transform: translateY(0) !important;
       
   }
+
+  .main-nav__item--cta{
+      animation:wiggle 200ms 3s 8 alternate;
+  }
+
+  @keyframes wiggle{
+      from{
+        transform:rotateZ(0);
+      }
+
+      to{
+        transform:rotateZ(10deg);
+      }
+  }
