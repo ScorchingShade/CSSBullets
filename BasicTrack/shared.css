@@ -6,6 +6,11 @@
     
 }
 
+:root{
+    --greenC: #0e4f1F;
+    --redC: #ff1b68;
+}
+
 html{
     height: 100%;
 }
@@ -37,7 +42,7 @@ body {
 .button:hover,
 .button:active {
     background-color: white;
-    color: #0e4f1F;
+    color: var(--greenC, #0e4f1F);
 }
 
 .button:focus {
@@ -151,7 +156,7 @@ main{
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
-    background: #ff1b68;
+    background: var(--red, #ff1b68);
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
