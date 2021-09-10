@@ -138,3 +138,36 @@
         border-left-color:#ff5454 ;
     }
 }
+
+.package:hover{
+    animation: move 0.2s  ease-in-out backwards;
+}
+
+
+@keyframes move {
+    
+    0%{
+        transform: translateY(0);
+    }
+
+    20%{
+        transform: translateY(-20px);
+    }
+
+    40%{
+        transform: translateY(-40px);
+    }
+
+    60%{
+        transform: translateY(-30px);
+    }
+
+    80%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
