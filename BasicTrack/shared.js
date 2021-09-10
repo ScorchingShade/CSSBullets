@@ -24,8 +24,13 @@ const closeModal = ()=>{
         modal.classList.remove('open');
        
     }
-    backdrop.classList.remove('open');
     backdrop.style.display='none';
+    
+    
+
+    setTimeout(()=>{
+        backdrop.classList.remove('open');
+    },200)
  
 }
 
@@ -49,10 +54,13 @@ selectPlanButton.forEach(i=>{
         // modal.className='open'; This will actually overwrite a complete class listing
         
         modal.classList.add('open');
-        backdrop.classList.add('open');
+        backdrop.style.display='block';
+        
        // closeModal();
 
-
+       setTimeout (function() {
+        backdrop.classList.add('open');
+    },10)
 
     })
 })
@@ -63,14 +71,21 @@ selectPlanButton.forEach(i=>{
 backdrop.addEventListener('click',()=>{
     
     mobileNav.style.display='none';
+    mobileNav.classList.remove("open");
     backdrop.style.display='none';
+    backdrop.classList.remove('open');
+    modal.classList.remove('open');
    
 });
 
 
 toggleButton.addEventListener('click',()=>{
-    mobileNav.style.display='block';
+    mobileNav.classList.add("open");
     backdrop.style.display='block';
+
+    setTimeout(()=>{
+        backdrop.classList.add('open');
+    },10)
 })
 
 

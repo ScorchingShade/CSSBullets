@@ -125,7 +125,7 @@
     font-family: 'Anton', sans-serif;
     margin-top: 42px;
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .slogan {
@@ -198,15 +198,19 @@
 
 .modal {
     position: fixed;
-    display: none;
+    opacity: 0;
+    
     z-index: 200;
     top: 20%;
     left: 30%;
-    width: 40%;
+    width: 50%;
     background: white;
     padding: 1rem;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4rem);
+    transition: all 200ms ease-out 1s !important;
+    
 }
 
 .modal__title {
