@@ -12,6 +12,7 @@ var mobileNav = document.querySelector('.mobile-nav');
 
 
 var navCta=document.querySelector('.main-nav__item--cta');
+var ctaButton = document.querySelector(".main-nav__item--cta");
 
 
 
@@ -88,5 +89,17 @@ toggleButton.addEventListener('click',()=>{
     },10)
 })
 
+
+ctaButton.addEventListener('animationstart',(event)=>{
+    console.log("animation started ",event);
+})
+
+ctaButton.addEventListener('animationend',(event)=>{
+    console.log("animation ended ",event);
+})
+
+ctaButton.addEventListener('animationiteration',(event)=>{
+    console.log("animation iteration ",event);
+})
 
 //console.log(selectPlanButton)
